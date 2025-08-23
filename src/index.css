@@ -2,42 +2,82 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
+/* ARTE DA PERSUASÃO - Premium Design System
+Luxury seduction and influence theme with sophisticated cocktail-inspired aesthetics
 */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Premium Dark Theme - Main */
+    --background: 20 14% 8%;
+    --foreground: 45 100% 91%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    /* Cards & Surfaces */
+    --card: 20 20% 12%;
+    --card-foreground: 45 85% 88%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 20 25% 15%;
+    --popover-foreground: 45 90% 90%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Brand Colors - Golden Luxury */
+    --primary: 45 95% 65%;
+    --primary-foreground: 20 20% 8%;
+    --primary-glow: 45 100% 75%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary - Deep Red Seduction */
+    --secondary: 0 65% 45%;
+    --secondary-foreground: 45 100% 95%;
+    --secondary-deep: 0 80% 35%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted - Warm Neutrals */
+    --muted: 25 15% 20%;
+    --muted-foreground: 45 30% 65%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent - Amber Sophistication */
+    --accent: 30 85% 55%;
+    --accent-foreground: 20 25% 10%;
+    --accent-glow: 30 95% 70%;
 
-    --destructive: 0 84.2% 60.2%;
+    /* Destructive */
+    --destructive: 0 84% 60%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    /* Borders & Inputs */
+    --border: 25 20% 25%;
+    --input: 25 25% 18%;
+    --ring: 45 95% 65%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
 
+    /* Custom Design Tokens */
+    --luxury-gold: 45 95% 65%;
+    --seduction-red: 0 65% 45%;
+    --elegant-black: 20 20% 8%;
+    --warm-white: 45 100% 95%;
+    --amber-glow: 30 95% 70%;
+
+    /* Gradients */
+    --gradient-hero: linear-gradient(135deg, hsl(var(--luxury-gold)) 0%, hsl(var(--amber-glow)) 50%, hsl(var(--seduction-red)) 100%);
+    --gradient-card: linear-gradient(145deg, hsl(var(--card)) 0%, hsl(25 25% 15%) 100%);
+    --gradient-accent: linear-gradient(90deg, hsl(var(--accent)) 0%, hsl(var(--accent-glow)) 100%);
+    --gradient-seduction: linear-gradient(45deg, hsl(var(--seduction-red)) 0%, hsl(var(--secondary-deep)) 100%);
+
+    /* Shadows & Glows */
+    --shadow-luxury: 0 20px 40px -10px hsl(var(--luxury-gold) / 0.3);
+    --shadow-seduction: 0 15px 35px -5px hsl(var(--seduction-red) / 0.4);
+    --shadow-elegant: 0 25px 50px -12px hsl(20 30% 5% / 0.8);
+    --glow-gold: 0 0 30px hsl(var(--luxury-gold) / 0.6);
+
+    /* Animations */
+    --transition-luxury: all 0.4s cubic-bezier(0.23, 1, 0.320, 1);
+    --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+
+    /* Typography Scale */
+    --font-size-hero: clamp(3rem, 8vw, 6rem);
+    --font-size-section: clamp(2rem, 5vw, 3.5rem);
+    --font-size-card: clamp(1.25rem, 3vw, 1.5rem);
+
+    /* Sidebar Variables */
     --sidebar-background: 0 0% 98%;
 
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -100,6 +140,92 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans antialiased;
+    background-image: 
+      radial-gradient(circle at 20% 80%, hsl(var(--luxury-gold) / 0.1) 0%, transparent 50%),
+      radial-gradient(circle at 80% 20%, hsl(var(--seduction-red) / 0.1) 0%, transparent 50%);
+  }
+
+  /* Custom Utility Classes */
+  .text-hero {
+    font-size: var(--font-size-hero);
+    font-weight: 900;
+    line-height: 0.9;
+    background: var(--gradient-hero);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-section {
+    font-size: var(--font-size-section);
+    font-weight: 800;
+    line-height: 1.1;
+  }
+
+  .bg-gradient-hero {
+    background: var(--gradient-hero);
+  }
+
+  .bg-gradient-card {
+    background: var(--gradient-card);
+  }
+
+  .bg-gradient-seduction {
+    background: var(--gradient-seduction);
+  }
+
+  .shadow-luxury {
+    box-shadow: var(--shadow-luxury);
+  }
+
+  .shadow-seduction {
+    box-shadow: var(--shadow-seduction);
+  }
+
+  .shadow-elegant {
+    box-shadow: var(--shadow-elegant);
+  }
+
+  .glow-gold {
+    box-shadow: var(--glow-gold);
+  }
+
+  .transition-luxury {
+    transition: var(--transition-luxury);
+  }
+
+  /* Animations */
+  @keyframes float {
+    0%, 100% { transform: translateY(0px) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(2deg); }
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { 
+      box-shadow: 0 0 20px hsl(var(--luxury-gold) / 0.3);
+    }
+    50% { 
+      box-shadow: 0 0 40px hsl(var(--luxury-gold) / 0.6);
+    }
+  }
+
+  @keyframes gradient-shift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
+  .animate-float {
+    animation: float 6s ease-in-out infinite;
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 3s ease-in-out infinite;
+  }
+
+  .animate-gradient {
+    background-size: 200% 200%;
+    animation: gradient-shift 4s ease infinite;
   }
 }
