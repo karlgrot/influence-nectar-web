@@ -20,11 +20,11 @@ const buttonVariants = cva(
         link: "text-primary underline-offset-4 hover:underline",
         
         // Custom luxury variants
-        hero: "bg-gradient-hero text-luxury-black font-bold tracking-wide shadow-luxury hover:shadow-seduction hover:scale-105 glow-gold",
-        seduction: "bg-gradient-seduction text-luxury-white font-bold border border-seduction-red/30 hover:border-seduction-red hover:scale-105 shadow-seduction",
-        luxury: "bg-primary text-primary-foreground font-bold border border-primary/30 hover:bg-primary-glow hover:scale-105 shadow-luxury animate-pulse-glow",
-        elegant: "bg-card text-card-foreground border border-primary/20 hover:border-primary hover:bg-primary/5 shadow-elegant",
-        premium: "bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold tracking-wider shadow-luxury"
+        hero: "bg-gradient-hero text-foreground font-bold tracking-wide shadow-luxury hover:shadow-seduction hover:scale-105 transition-luxury",
+        seduction: "bg-gradient-seduction text-foreground font-bold border border-secondary/30 hover:border-secondary hover:scale-105 shadow-seduction transition-luxury",
+        luxury: "bg-primary text-primary-foreground font-bold border border-primary/30 hover:bg-primary/90 hover:scale-105 shadow-luxury transition-luxury",
+        elegant: "bg-card text-card-foreground border border-primary/20 hover:border-primary hover:bg-primary/5 shadow-elegant transition-luxury",
+        premium: "bg-transparent border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground font-bold tracking-wider shadow-luxury transition-luxury"
       },
       size: {
         default: "h-12 px-6 py-3",
