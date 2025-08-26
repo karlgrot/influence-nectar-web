@@ -15,7 +15,7 @@ export const ScenarioCard = ({ title, description, icon, features, isPopular }: 
       {isPopular && (
         <div className="absolute -top-3 left-1/2 transform -translate-x-1/2">
           <span className="bg-gradient-hero px-4 py-1 text-xs font-bold text-luxury-black rounded-full shadow-luxury">
-            MAIS PROCURADO
+            MOST POPULAR
           </span>
         </div>
       )}
@@ -44,7 +44,7 @@ export const ScenarioCard = ({ title, description, icon, features, isPopular }: 
           variant={isPopular ? "luxury" : "elegant"} 
           className="w-full group-hover:scale-105"
         >
-          Ver Roteiro Completo
+          View Complete Guide
         </Button>
       </div>
     </Card>

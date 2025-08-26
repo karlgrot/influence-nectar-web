@@ -10,76 +10,76 @@ import mixingCocktails from "@/assets/mixing-cocktails.jpg";
 const Index = () => {
   const scenarios = [
     {
-      title: "Conquistar & Seduzir",
-      description: "Transforme qualquer encontro em uma experiência magnética e inesquecível",
+      title: "Conquer & Seduce",
+      description: "Transform any encounter into a magnetic and unforgettable experience",
       icon: "💕",
       isPopular: true,
       features: [
-        "Drinks afrodisíacos e suas dosagens exatas",
-        "Playlist que desperta química instantânea",
-        "Roteiros de conversa para criar conexão profunda",
-        "Linguagem corporal irresistível",
-        "Timing perfeito para cada movimento"
+        "Aphrodisiac drinks and their exact dosages",
+        "Playlist that awakens instant chemistry",
+        "Conversation scripts to create deep connection",
+        "Irresistible body language",
+        "Perfect timing for every move"
       ]
     },
     {
-      title: "Impressionar Família",
-      description: "Cause a melhor primeira impressão e seja lembrado para sempre",
+      title: "Impress Family",
+      description: "Make the best first impression and be remembered forever",
       icon: "👨‍👩‍👧‍👦",
       features: [
-        "Drinks clássicos que demonstram sofisticação",
-        "Conversas que geram admiração e respeito",
-        "Como ser o genro/nora dos sonhos",
-        "Etiqueta social impecável",
-        "Histórias que cativam todas as gerações"
+        "Classic drinks that show sophistication",
+        "Conversations that generate admiration and respect",
+        "How to be the dream son/daughter-in-law",
+        "Impeccable social etiquette",
+        "Stories that captivate all generations"
       ]
     },
     {
-      title: "Desarmar Rivais",
-      description: "Neutralize tensões e transforme adversários em aliados",
+      title: "Disarm Rivals",
+      description: "Neutralize tensions and transform adversaries into allies",
       icon: "🤝",
       features: [
-        "Drinks que criam ambiente de harmonia",
-        "Técnicas de persuasão elegante",
-        "Como dissipar conflitos com classe",
-        "Linguagem pacificadora mas assertiva",
-        "Estratégias para virar o jogo a seu favor"
+        "Drinks that create a harmonious atmosphere",
+        "Elegant persuasion techniques",
+        "How to dissipate conflicts with class",
+        "Pacifying yet assertive language",
+        "Strategies to turn the game in your favor"
       ]
     },
     {
-      title: "Fortalecer Amizades",
-      description: "Crie laços eternos e seja o amigo que todos querem ter por perto",
+      title: "Strengthen Friendships",
+      description: "Create eternal bonds and be the friend everyone wants to have around",
       icon: "🎉",
       features: [
-        "Drinks para celebração e união",
-        "Atividades que estreitam vínculos",
-        "Como ser o centro das atenções positivas",
-        "Tradições que marcam para sempre",
-        "O segredo dos grupos inseparáveis"
+        "Drinks for celebration and unity",
+        "Activities that strengthen bonds",
+        "How to be the center of positive attention",
+        "Traditions that mark forever",
+        "The secret of inseparable groups"
       ]
     },
     {
-      title: "Brilhar em Eventos",
-      description: "Seja a pessoa mais interessante de qualquer festa ou reunião",
+      title: "Shine at Events",
+      description: "Be the most interesting person at any party or gathering",
       icon: "✨",
       features: [
-        "Drinks que chamam atenção e curiosidade",
-        "Como se tornar o ponto focal natural",
-        "Histórias que prendem multidões",
-        "Networking estratégico com drinks",
-        "Presença magnética em qualquer ambiente"
+        "Drinks that draw attention and curiosity",
+        "How to become the natural focal point",
+        "Stories that captivate crowds",
+        "Strategic networking with drinks",
+        "Magnetic presence in any environment"
       ]
     },
     {
-      title: "Criar Intimidade",
-      description: "Construa momentos únicos que ficarão gravados para sempre",
+      title: "Create Intimacy",
+      description: "Build unique moments that will be engraved forever",
       icon: "🌹",
       features: [
-        "Drinks que despertam os sentidos",
-        "Ambientação que derrete corações",
-        "Conversas que tocam a alma",
-        "Como criar memórias indeléveis",
-        "A arte de ser inesquecível"
+        "Drinks that awaken the senses",
+        "Ambiance that melts hearts",
+        "Conversations that touch the soul",
+        "How to create indelible memories",
+        "The art of being unforgettable"
       ]
     }
   ];
@@ -87,29 +87,29 @@ const Index = () => {
   const testimonials = [
     {
       name: "Carlos M.",
-      role: "Executivo, 34 anos",
-      content: "Em 3 semanas usando o manual, consegui impressionar meus sogros, reconquistar minha esposa e ainda virei o 'bartender oficial' do meu grupo de amigos. Minha vida social nunca foi tão rica!",
+      role: "Executive, 34 years old",
+      content: "In 3 weeks using the manual, I managed to impress my in-laws, win back my wife and even became the 'official bartender' of my friend group. My social life has never been so rich!",
       beforeAfter: {
-        before: "Sempre ficava no canto das festas, não sabia como começar conversas",
-        after: "Sou o centro das atenções, todos querem saber meus 'segredos' de relacionamento"
+        before: "Always stayed in the corner at parties, didn't know how to start conversations",
+        after: "I'm the center of attention, everyone wants to know my relationship 'secrets'"
       }
     },
     {
       name: "Marina L.",
-      role: "Advogada, 28 anos",
-      content: "O manual mudou completamente minha forma de me relacionar. Consegui o emprego dos sonhos impressionando no happy hour da empresa e ainda conquistei um relacionamento incrível!",
+      role: "Lawyer, 28 years old",
+      content: "The manual completely changed how I relate to people. I got my dream job by impressing at the company happy hour and even found an incredible relationship!",
       beforeAfter: {
-        before: "Tímida, insegura em eventos sociais e profissionais",
-        after: "Confiante, carismática e com uma rede de contatos invejável"
+        before: "Shy, insecure at social and professional events",
+        after: "Confident, charismatic and with an enviable network of contacts"
       }
     },
     {
       name: "Roberto S.",
-      role: "Empresário, 41 anos",
-      content: "Pensei que era besteira no início, mas os resultados são inegáveis. Fechei 3 parcerias importantes em jantares estratégicos e meu casamento está mais apaixonado que nunca.",
+      role: "Entrepreneur, 41 years old",
+      content: "I thought it was nonsense at first, but the results are undeniable. I closed 3 important partnerships at strategic dinners and my marriage is more passionate than ever.",
       beforeAfter: {
-        before: "Relacionamentos frios, negócios difíceis de fechar",
-        after: "Parceiro irresistível, empresário magnético, casamento renovado"
+        before: "Cold relationships, difficult business to close",
+        after: "Irresistible partner, magnetic entrepreneur, renewed marriage"
       }
     }
   ];
@@ -130,34 +130,34 @@ const Index = () => {
         <div className="container mx-auto px-6 relative z-10 text-center">
           <div className="max-w-5xl mx-auto">
             <h1 className="text-hero mb-8 leading-none">
-              Nunca Mais Passe Despercebido
+              Never Go Unnoticed Again
             </h1>
             
             <div className="text-hero text-primary mb-8">
-              em NENHUMA Ocasião
+              in ANY Occasion
             </div>
             
             <p className="text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
-              O <span className="text-primary font-bold">primeiro sistema completo</span> que transforma 
-              drinks em <span className="text-accent font-bold">ferramentas de sedução e influência</span> 
-              para QUALQUER situação social
+              The <span className="text-primary font-bold">first complete system</span> that transforms 
+              drinks into <span className="text-accent font-bold">tools of seduction and influence</span> 
+              for ANY social situation
             </p>
             
             <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
               <Button variant="hero" size="hero" className="animate-pulse-glow">
-                🚀 QUERO SER IRRESISTÍVEL
+                🚀 I WANT TO BE IRRESISTIBLE
               </Button>
               <Button variant="premium" size="lg">
-                Ver Sistema Completo
+                View Complete System
               </Button>
             </div>
             
             <div className="bg-gradient-card rounded-2xl p-8 border border-primary/30 shadow-elegant backdrop-blur-sm">
               <p className="text-lg text-accent font-bold mb-4">
-                ⚡ PARE DE IMPROVISAR NOS MOMENTOS QUE MAIS IMPORTAM!
+                ⚡ STOP IMPROVISING IN THE MOMENTS THAT MATTER MOST!
               </p>
               <p className="text-muted-foreground">
-                O manual que deveria ser ensinado na escola - como ser irresistível em qualquer situação social
+                The manual that should be taught in school - how to be irresistible in any social situation
               </p>
             </div>
           </div>
@@ -175,10 +175,10 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-section mb-6 text-primary">
-              Domine QUALQUER Situação Social
+              Master ANY Social Situation
             </h2>
             <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
-              Cada cenário inclui <span className="text-primary font-bold">drink estratégico + playlist + roteiros de conversa + linguagem corporal + timing perfeito</span>
+              Each scenario includes <span className="text-primary font-bold">strategic drink + playlist + conversation scripts + body language + perfect timing</span>
             </p>
           </div>
           
@@ -202,7 +202,7 @@ const Index = () => {
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
             <div>
               <h2 className="text-section mb-8 text-secondary">
-                Cansado de Ser Esquecível?
+                Tired of Being Forgettable?
               </h2>
               
               <div className="space-y-6 mb-8">
@@ -210,33 +210,33 @@ const Index = () => {
                   <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-secondary-foreground font-bold">✗</span>
                   </div>
-                  <p className="text-lg text-foreground">Sempre fica no canto das festas, sem saber como começar conversas</p>
+                  <p className="text-lg text-foreground">Always stays in the corner at parties, not knowing how to start conversations</p>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-secondary-foreground font-bold">✗</span>
                   </div>
-                  <p className="text-lg text-foreground">Seus encontros são sempre "mais ou menos" - nunca memoráveis</p>
+                  <p className="text-lg text-foreground">Your encounters are always "just okay" - never memorable</p>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-secondary-foreground font-bold">✗</span>
                   </div>
-                  <p className="text-lg text-foreground">Improvisa sempre e os resultados são imprevisíveis</p>
+                  <p className="text-lg text-foreground">Always improvises and results are unpredictable</p>
                 </div>
                 
                 <div className="flex items-start gap-4">
                   <div className="w-8 h-8 bg-secondary rounded-full flex items-center justify-center flex-shrink-0">
                     <span className="text-secondary-foreground font-bold">✗</span>
                   </div>
-                  <p className="text-lg text-foreground">Vê outros sendo o centro das atenções e não entende o "segredo"</p>
+                  <p className="text-lg text-foreground">Sees others being the center of attention and doesn't understand the "secret"</p>
                 </div>
               </div>
               
               <Button variant="seduction" size="lg">
-                Eu Quero Mudar Isso AGORA!
+                I Want to Change This NOW!
               </Button>
             </div>
             
@@ -248,8 +248,8 @@ const Index = () => {
               />
               <div className="absolute -bottom-4 -right-4 bg-gradient-hero p-6 rounded-2xl shadow-luxury">
                 <p className="text-luxury-black font-bold text-lg">
-                  🎯 Transformação<br/>
-                  Garantida!
+                  🎯 Guaranteed<br/>
+                  Transformation!
                 </p>
               </div>
             </div>
@@ -262,11 +262,11 @@ const Index = () => {
         <div className="container mx-auto px-6">
           <div className="text-center mb-16">
             <h2 className="text-section mb-6 text-primary">
-              Transformações Reais
+              Real Transformations
             </h2>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              Pessoas comuns que se tornaram <span className="text-primary font-bold">irresistíveis</span> 
-              usando nosso sistema
+              Ordinary people who became <span className="text-primary font-bold">irresistible</span> 
+              using our system
             </p>
           </div>
           
@@ -295,44 +295,44 @@ const Index = () => {
         <div className="container mx-auto px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
             <h2 className="text-section mb-8 text-primary">
-              Como Você Viveu Até Hoje Sem Esse Guia?!
+              How Did You Live Without This Guide Until Now?!
             </h2>
             
             <p className="text-2xl text-foreground mb-12 leading-relaxed">
-              Pare de passar despercebido. <span className="text-primary font-bold">Hoje</span> você se transforma 
-              na pessoa que todos querem conhecer, conquistar e ter por perto.
+              Stop going unnoticed. <span className="text-primary font-bold">Today</span> you transform 
+              into the person everyone wants to meet, conquer and have around.
             </p>
             
             <div className="bg-gradient-card rounded-3xl p-12 border border-primary/30 shadow-elegant backdrop-blur-sm mb-12">
               <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
                 <div className="text-center">
                   <div className="text-4xl font-bold text-primary mb-2">200+</div>
-                  <p className="text-muted-foreground">Situações Cobertas</p>
+                  <p className="text-muted-foreground">Situations Covered</p>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-primary mb-2">1000+</div>
-                  <p className="text-muted-foreground">Vidas Transformadas</p>
+                  <p className="text-muted-foreground">Lives Transformed</p>
                 </div>
                 <div className="text-center">
                   <div className="text-4xl font-bold text-primary mb-2">100%</div>
-                  <p className="text-muted-foreground">Satisfação Garantida</p>
+                  <p className="text-muted-foreground">Satisfaction Guaranteed</p>
                 </div>
               </div>
               
               <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
                 <Button variant="hero" size="hero" className="animate-pulse-glow text-xl px-16">
-                  🔥 ACESSO IMEDIATO - R$ 197
+                  🔥 INSTANT ACCESS - $97
                 </Button>
                 <div className="text-center">
-                  <p className="text-sm text-muted-foreground line-through">De R$ 497</p>
-                  <p className="text-primary font-bold">OFERTA LIMITADA</p>
+                  <p className="text-sm text-muted-foreground line-through">From $297</p>
+                  <p className="text-primary font-bold">LIMITED OFFER</p>
                 </div>
               </div>
             </div>
             
             <p className="text-lg text-muted-foreground">
-              ⚡ <span className="text-accent font-bold">GARANTIA TOTAL:</span> 30 dias para testar. 
-              Se não ficar impressionado com os resultados, devolvemos 100% do seu dinheiro.
+              ⚡ <span className="text-accent font-bold">TOTAL GUARANTEE:</span> 30 days to test. 
+              If you're not impressed with the results, we'll refund 100% of your money.
             </p>
           </div>
         </div>

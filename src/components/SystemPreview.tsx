@@ -10,43 +10,43 @@ interface SystemElement {
 const systemElements: SystemElement[] = [
   {
     icon: "🍸",
-    title: "Drink Perfeito",
-    description: "Receita exata para cada situação específica"
+    title: "Perfect Drink",
+    description: "Exact recipe for each specific situation"
   },
   {
     icon: "🎵",
-    title: "Playlist Estratégica",
-    description: "Músicas calculadas para cada momento"
+    title: "Strategic Playlist",
+    description: "Calculated music for every moment"
   },
   {
     icon: "🍽️",
-    title: "Cardápio Completo",
-    description: "Acompanhamentos que potencializam o efeito"
+    title: "Complete Menu",
+    description: "Accompaniments that amplify the effect"
   },
   {
     icon: "💡",
-    title: "Ambientação Total",
-    description: "Cores, iluminação e decoração ideais"
+    title: "Total Ambiance",
+    description: "Ideal colors, lighting and decoration"
   },
   {
     icon: "🎯",
-    title: "Roteiros de Conversa",
-    description: "Diálogos testados e aprovados"
+    title: "Conversation Scripts",
+    description: "Tested and approved dialogues"
   },
   {
     icon: "📖",
-    title: "Histórias Cativantes",
-    description: "Narrativas que prendem a atenção"
+    title: "Captivating Stories",
+    description: "Narratives that grab attention"
   },
   {
     icon: "🤝",
-    title: "Linguagem Corporal",
-    description: "Gestos e postura para cada cenário"
+    title: "Body Language",
+    description: "Gestures and posture for each scenario"
   },
   {
     icon: "⏰",
-    title: "Timing Perfeito",
-    description: "Quando fazer cada movimento"
+    title: "Perfect Timing",
+    description: "When to make each move"
   }
 ];
 
@@ -58,11 +58,11 @@ export const SystemPreview = () => {
       <div className="container mx-auto px-6 relative">
         <div className="text-center mb-16">
           <h2 className="text-section mb-6 text-primary">
-            O Sistema Completo Revelado
+            The Complete System Revealed
           </h2>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto leading-relaxed">
-            Cada situação inclui <span className="text-primary font-bold">8 elementos estratégicos</span> 
-            trabalhando em perfeita harmonia para garantir seu sucesso social
+            Each situation includes <span className="text-primary font-bold">8 strategic elements</span> 
+            working in perfect harmony to guarantee your social success
           </p>
         </div>
         
@@ -90,27 +90,27 @@ export const SystemPreview = () => {
         <div className="text-center">
           <div className="bg-gradient-card border border-primary/30 rounded-2xl p-8 max-w-4xl mx-auto shadow-elegant">
             <h3 className="text-2xl font-bold text-primary mb-4">
-              🎯 EXEMPLO: Cenário "Conquistar o Crush"
+              🎯 EXAMPLE: "Winning Over Your Crush" Scenario
             </h3>
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6 text-left mb-8">
               <div>
-                <h4 className="font-bold text-accent mb-2">🍸 Drink Estratégico:</h4>
-                <p className="text-sm text-muted-foreground mb-4">Gin Tônica com Laranja - sofisticado mas descontraído</p>
+                <h4 className="font-bold text-accent mb-2">🍸 Strategic Drink:</h4>
+                <p className="text-sm text-muted-foreground mb-4">Gin & Tonic with Orange - sophisticated yet relaxed</p>
                 
-                <h4 className="font-bold text-accent mb-2">🎵 Playlist Calculada:</h4>
-                <p className="text-sm text-muted-foreground mb-4">Indie Pop suave → R&B envolvente → Eletrônica sutil</p>
+                <h4 className="font-bold text-accent mb-2">🎵 Calculated Playlist:</h4>
+                <p className="text-sm text-muted-foreground mb-4">Smooth Indie Pop → Engaging R&B → Subtle Electronic</p>
               </div>
               <div>
-                <h4 className="font-bold text-accent mb-2">💬 Roteiro de Conversa:</h4>
-                <p className="text-sm text-muted-foreground mb-4">"Essa música me lembra de..." + técnica de storytelling</p>
+                <h4 className="font-bold text-accent mb-2">💬 Conversation Script:</h4>
+                <p className="text-sm text-muted-foreground mb-4">"This song reminds me of..." + storytelling technique</p>
                 
-                <h4 className="font-bold text-accent mb-2">⏰ Timing Perfeito:</h4>
-                <p className="text-sm text-muted-foreground">Momento exato para cada movimento</p>
+                <h4 className="font-bold text-accent mb-2">⏰ Perfect Timing:</h4>
+                <p className="text-sm text-muted-foreground">Exact moment for each move</p>
               </div>
             </div>
             
             <Button variant="luxury" size="lg" className="animate-pulse-glow">
-              QUERO ACESSO AO SISTEMA COMPLETO
+              I WANT ACCESS TO THE COMPLETE SYSTEM
             </Button>
           </div>
         </div>

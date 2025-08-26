@@ -28,12 +28,12 @@ export const TestimonialCard = ({ name, role, content, beforeAfter }: Testimonia
         
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
           <div className="bg-secondary/20 rounded-lg p-4 border border-secondary/30">
-            <h4 className="text-sm font-bold text-secondary mb-2">ANTES:</h4>
+            <h4 className="text-sm font-bold text-secondary mb-2">BEFORE:</h4>
             <p className="text-sm text-muted-foreground">{beforeAfter.before}</p>
           </div>
           
           <div className="bg-primary/20 rounded-lg p-4 border border-primary/30">
-            <h4 className="text-sm font-bold text-primary mb-2">DEPOIS:</h4>
+            <h4 className="text-sm font-bold text-primary mb-2">AFTER:</h4>
             <p className="text-sm text-foreground font-medium">{beforeAfter.after}</p>
           </div>
         </div>
