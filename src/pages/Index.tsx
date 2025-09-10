@@ -331,7 +331,7 @@ const Index = () => {
             </div>
             
             <p className="text-lg text-muted-foreground">
-              ⚡ <span className="text-accent font-bold">TOTAL GUARANTEE:</span> 30 days to test. 
+              ⚡ <span className="text-accent font-bold animate-pulse hover:scale-110 transition-all duration-300 inline-block cursor-pointer">TOTAL GUARANTEE:</span> 30 days to test. 
               If you're not impressed with the results, we'll refund 100% of your money.
             </p>
           </div>
