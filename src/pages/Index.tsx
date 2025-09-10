@@ -337,6 +337,17 @@ const Index = () => {
           </div>
         </div>
       </section>
+
+      {/* Footer */}
+      <footer className="py-8 border-t border-border/20 bg-background/80 backdrop-blur-sm">
+        <div className="container mx-auto px-6">
+          <div className="text-center">
+            <p className="text-muted-foreground">
+              Get in contact with us: <a href="mailto:info@drinkbooking.com" className="text-primary hover:text-primary/80 transition-colors">info@drinkbooking.com</a>
+            </p>
+          </div>
+        </div>
+      </footer>
     </div>
   );
 };
