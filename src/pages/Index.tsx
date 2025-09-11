@@ -6,6 +6,8 @@ import { SystemPreview } from "@/components/SystemPreview";
 import heroCocktail from "@/assets/hero-cocktail.jpg";
 import seductionWine from "@/assets/seduction-wine.jpg";
 import mixingCocktails from "@/assets/mixing-cocktails.jpg";
+import drinkBookingLogo from "@/assets/drinkbooking-logo.png";
+import drinkBookingIcon from "@/assets/drinkbooking-icon.png";
 
 const Index = () => {
   const scenarios = [
@@ -116,8 +118,31 @@ const Index = () => {
 
   return (
     <div className="min-h-screen bg-background">
+      {/* Navigation */}
+      <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/20">
+        <div className="container mx-auto px-6 py-4">
+          <div className="flex items-center justify-between">
+            <div className="flex items-center space-x-3">
+              <img 
+                src={drinkBookingIcon} 
+                alt="DrinkBooking Icon" 
+                className="w-10 h-10 object-contain"
+              />
+              <img 
+                src={drinkBookingLogo} 
+                alt="DrinkBooking Logo" 
+                className="h-8 object-contain"
+              />
+            </div>
+            <Button variant="outline" size="sm">
+              Contact Us
+            </Button>
+          </div>
+        </div>
+      </nav>
+
       {/* Hero Section */}
-      <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
+      <section className="relative min-h-screen flex items-center justify-center overflow-hidden pt-20">
         <div className="absolute inset-0">
           <img 
             src={heroCocktail} 
@@ -341,7 +366,19 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-8 border-t border-border/20 bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto px-6">
-          <div className="text-center">
+          <div className="text-center space-y-4">
+            <div className="flex items-center justify-center space-x-3 mb-4">
+              <img 
+                src={drinkBookingIcon} 
+                alt="DrinkBooking Icon" 
+                className="w-8 h-8 object-contain opacity-80"
+              />
+              <img 
+                src={drinkBookingLogo} 
+                alt="DrinkBooking Logo" 
+                className="h-6 object-contain opacity-80"
+              />
+            </div>
             <p className="text-muted-foreground">
               Get in contact with us: <a href="mailto:info@drinkbooking.com" className="text-primary hover:text-primary/80 transition-colors">info@drinkbooking.com</a>
             </p>
