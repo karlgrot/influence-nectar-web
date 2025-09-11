@@ -7,9 +7,10 @@ interface ScenarioCardProps {
   icon: string;
   features: string[];
   isPopular?: boolean;
+  onViewGuide?: () => void;
 }
 
-export const ScenarioCard = ({ title, description, icon, features, isPopular }: ScenarioCardProps) => {
+export const ScenarioCard = ({ title, description, icon, features, isPopular, onViewGuide }: ScenarioCardProps) => {
   return (
     <Card className={`relative bg-gradient-card border-border/50 backdrop-blur-sm transition-luxury hover:scale-105 hover:shadow-luxury group ${isPopular ? 'border-primary ring-2 ring-primary/20' : ''}`}>
       {isPopular && (
@@ -43,6 +44,7 @@ export const ScenarioCard = ({ title, description, icon, features, isPopular }: 
         <Button 
           variant={isPopular ? "luxury" : "elegant"} 
           className="w-full group-hover:scale-105"
+          onClick={onViewGuide}
         >
           View Complete Guide
         </Button>

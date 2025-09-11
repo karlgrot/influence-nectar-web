@@ -1,8 +1,10 @@
+import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { ScenarioCard } from "@/components/ScenarioCard";
 import { TestimonialCard } from "@/components/TestimonialCard";
 import { SystemPreview } from "@/components/SystemPreview";
+import { ChatPopup } from "@/components/ChatPopup";
 import heroCocktail from "@/assets/hero-cocktail.jpg";
 import seductionWine from "@/assets/seduction-wine.jpg";
 import mixingCocktails from "@/assets/mixing-cocktails.jpg";
@@ -10,6 +12,13 @@ import drinkBookingLogo from "@/assets/drinkbooking-logo.png";
 import drinkBookingIcon from "@/assets/drinkbooking-icon.png";
 
 const Index = () => {
+  const [chatPopupOpen, setChatPopupOpen] = useState(false);
+  const [selectedScenario, setSelectedScenario] = useState<typeof scenarios[0] | null>(null);
+
+  const handleViewGuide = (scenario: typeof scenarios[0]) => {
+    setSelectedScenario(scenario);
+    setChatPopupOpen(true);
+  };
   const scenarios = [
     {
       title: "Conquer & Seduce",
@@ -212,6 +221,7 @@ const Index = () => {
               <ScenarioCard
                 key={index}
                 {...scenario}
+                onViewGuide={() => handleViewGuide(scenario)}
               />
             ))}
           </div>
@@ -385,6 +395,13 @@ const Index = () => {
           </div>
         </div>
       </footer>
+
+      {/* Chat Popup */}
+      <ChatPopup 
+        isOpen={chatPopupOpen}
+        onClose={() => setChatPopupOpen(false)}
+        scenario={selectedScenario}
+      />
     </div>
   );
 };
