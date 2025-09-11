@@ -129,21 +129,21 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       {/* Navigation */}
       <nav className="fixed top-0 left-0 right-0 z-50 bg-background/90 backdrop-blur-md border-b border-border/20">
-        <div className="container mx-auto px-6 py-4">
+        <div className="container mx-auto px-4 sm:px-6 py-3 sm:py-4">
           <div className="flex items-center justify-between">
-            <div className="flex items-center space-x-3">
+            <div className="flex items-center space-x-2 sm:space-x-3">
               <img 
                 src={drinkBookingIcon} 
                 alt="DrinkBooking Icon" 
-                className="w-10 h-10 object-contain"
+                className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
               />
               <img 
                 src={drinkBookingLogo} 
                 alt="DrinkBooking Logo" 
-                className="h-8 object-contain"
+                className="h-6 sm:h-8 object-contain"
               />
             </div>
-            <Button variant="outline" size="sm">
+            <Button variant="outline" size="sm" className="text-xs sm:text-sm px-2 sm:px-4">
               Contact Us
             </Button>
           </div>
@@ -156,41 +156,41 @@ const Index = () => {
           <img 
             src={heroCocktail} 
             alt="Luxury cocktail with golden lighting" 
-            className="w-full h-full object-cover opacity-30"
+            className="w-full h-full object-cover object-center opacity-30 sm:object-center md:object-top"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-background/80 via-background/60 to-background/80"></div>
         </div>
         
-        <div className="container mx-auto px-6 relative z-10 text-center">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
           <div className="max-w-5xl mx-auto">
-            <h1 className="text-hero mb-8 leading-none">
+            <h1 className="text-hero mb-6 sm:mb-8 leading-tight sm:leading-none px-2">
               Never Go Unnoticed Again
             </h1>
             
-            <div className="text-hero text-primary mb-8">
+            <div className="text-hero text-primary mb-6 sm:mb-8 px-2">
               in ANY Occasion
             </div>
             
-            <p className="text-2xl text-muted-foreground mb-12 max-w-4xl mx-auto leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-muted-foreground mb-8 sm:mb-12 max-w-4xl mx-auto leading-relaxed px-4">
               The <span className="text-primary font-bold">first complete system</span> that transforms 
               drinks into <span className="text-accent font-bold">tools of seduction and influence</span> 
               for ANY social situation
             </p>
             
-            <div className="flex flex-col sm:flex-row gap-6 justify-center items-center mb-16">
-              <Button variant="hero" size="hero" className="animate-pulse-glow">
+            <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-16 px-4">
+              <Button variant="hero" size="hero" className="animate-pulse-glow w-full sm:w-auto text-sm sm:text-base">
                 🚀 I WANT TO BE IRRESISTIBLE
               </Button>
-              <Button variant="premium" size="lg">
+              <Button variant="premium" size="lg" className="w-full sm:w-auto">
                 View Complete System
               </Button>
             </div>
             
-            <div className="bg-gradient-card rounded-2xl p-8 border border-primary/30 shadow-elegant backdrop-blur-sm">
-              <p className="text-lg text-accent font-bold mb-4">
+            <div className="bg-gradient-card rounded-2xl p-4 sm:p-6 lg:p-8 border border-primary/30 shadow-elegant backdrop-blur-sm mx-4">
+              <p className="text-base sm:text-lg text-accent font-bold mb-3 sm:mb-4">
                 ⚡ STOP IMPROVISING IN THE MOMENTS THAT MATTER MOST!
               </p>
-              <p className="text-muted-foreground">
+              <p className="text-sm sm:text-base text-muted-foreground">
                 The manual that should be taught in school - how to be irresistible in any social situation
               </p>
             </div>
@@ -205,13 +205,13 @@ const Index = () => {
       </section>
 
       {/* Scenarios Section */}
-      <section className="py-20 relative">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-section mb-6 text-primary">
+      <section className="py-12 sm:py-16 lg:py-20 relative">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-section mb-4 sm:mb-6 text-primary px-4">
               Master ANY Social Situation
             </h2>
-            <p className="text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-4xl mx-auto leading-relaxed px-4">
               Each scenario includes <span className="text-primary font-bold">strategic drink + playlist + conversation scripts + body language + perfect timing</span>
             </p>
           </div>
@@ -232,9 +232,9 @@ const Index = () => {
       <SystemPreview />
 
       {/* Problem/Solution Section */}
-      <section className="py-20 bg-gradient-to-br from-secondary/10 to-primary/5">
-        <div className="container mx-auto px-6">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+      <section className="py-12 sm:py-16 lg:py-20 bg-gradient-to-br from-secondary/10 to-primary/5">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
             <div>
               <h2 className="text-section mb-8 text-secondary">
                 Tired of Being Forgettable?
@@ -275,14 +275,14 @@ const Index = () => {
               </Button>
             </div>
             
-            <div className="relative">
+            <div className="relative mt-8 lg:mt-0">
               <img 
                 src={seductionWine} 
                 alt="Elegant wine setting for seduction" 
-                className="rounded-2xl shadow-seduction w-full animate-float"
+                className="rounded-2xl shadow-seduction w-full h-64 sm:h-80 lg:h-auto object-cover animate-float"
               />
-              <div className="absolute -bottom-4 -right-4 bg-gradient-hero p-6 rounded-2xl shadow-luxury">
-                <p className="text-luxury-black font-bold text-lg">
+              <div className="absolute -bottom-2 -right-2 sm:-bottom-4 sm:-right-4 bg-gradient-hero p-3 sm:p-4 lg:p-6 rounded-xl sm:rounded-2xl shadow-luxury">
+                <p className="text-luxury-black font-bold text-sm sm:text-base lg:text-lg">
                   🎯 Guaranteed<br/>
                   Transformation!
                 </p>
@@ -293,13 +293,13 @@ const Index = () => {
       </section>
 
       {/* Testimonials */}
-      <section className="py-20">
-        <div className="container mx-auto px-6">
-          <div className="text-center mb-16">
-            <h2 className="text-section mb-6 text-primary">
+      <section className="py-12 sm:py-16 lg:py-20">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center mb-12 sm:mb-16">
+            <h2 className="text-section mb-4 sm:mb-6 text-primary px-4">
               Real Transformations
             </h2>
-            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+            <p className="text-base sm:text-lg lg:text-xl text-muted-foreground max-w-3xl mx-auto px-4">
               Ordinary people who became <span className="text-primary font-bold">irresistible</span> 
               using our system
             </p>
@@ -317,50 +317,50 @@ const Index = () => {
       </section>
 
       {/* Final CTA */}
-      <section className="py-20 relative overflow-hidden">
+      <section className="py-12 sm:py-16 lg:py-20 relative overflow-hidden">
         <div className="absolute inset-0">
           <img 
             src={mixingCocktails} 
             alt="Professional cocktail mixing scene" 
-            className="w-full h-full object-cover opacity-20"
+            className="w-full h-full object-cover object-center opacity-20"
           />
           <div className="absolute inset-0 bg-gradient-to-br from-background/90 to-background/70"></div>
         </div>
         
-        <div className="container mx-auto px-6 relative z-10">
+        <div className="container mx-auto px-4 sm:px-6 relative z-10">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-section mb-8 text-primary">
+            <h2 className="text-section mb-6 sm:mb-8 text-primary px-4">
               How Did You Live Without This Guide Until Now?!
             </h2>
             
-            <p className="text-2xl text-foreground mb-12 leading-relaxed">
+            <p className="text-lg sm:text-xl lg:text-2xl text-foreground mb-8 sm:mb-12 leading-relaxed px-4">
               Stop going unnoticed. <span className="text-primary font-bold">Today</span> you transform 
               into the person everyone wants to meet, conquer and have around.
             </p>
             
-            <div className="bg-gradient-card rounded-3xl p-12 border border-primary/30 shadow-elegant backdrop-blur-sm mb-12">
-              <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-8">
+            <div className="bg-gradient-card rounded-2xl sm:rounded-3xl p-6 sm:p-8 lg:p-12 border border-primary/30 shadow-elegant backdrop-blur-sm mb-8 sm:mb-12 mx-4">
+              <div className="grid grid-cols-1 md:grid-cols-3 gap-6 sm:gap-8 mb-6 sm:mb-8">
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">200+</div>
-                  <p className="text-muted-foreground">Situations Covered</p>
+                  <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">200+</div>
+                  <p className="text-sm sm:text-base text-muted-foreground">Situations Covered</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">1000+</div>
-                  <p className="text-muted-foreground">Lives Transformed</p>
+                  <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">1000+</div>
+                  <p className="text-sm sm:text-base text-muted-foreground">Lives Transformed</p>
                 </div>
                 <div className="text-center">
-                  <div className="text-4xl font-bold text-primary mb-2">100%</div>
-                  <p className="text-muted-foreground">Satisfaction Guaranteed</p>
+                  <div className="text-3xl sm:text-4xl font-bold text-primary mb-2">100%</div>
+                  <p className="text-sm sm:text-base text-muted-foreground">Satisfaction Guaranteed</p>
                 </div>
               </div>
               
-              <div className="flex flex-col sm:flex-row gap-6 justify-center items-center">
-                <Button variant="hero" size="hero" className="animate-pulse-glow text-xl px-16">
+              <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
+                <Button variant="hero" size="hero" className="animate-pulse-glow text-base sm:text-lg lg:text-xl px-8 sm:px-12 lg:px-16 w-full sm:w-auto">
                   🔥 INSTANT ACCESS - $97
                 </Button>
                 <div className="text-center">
                   <p className="text-sm text-muted-foreground line-through">From $297</p>
-                  <p className="text-primary font-bold">LIMITED OFFER</p>
+                  <p className="text-primary font-bold text-sm sm:text-base">LIMITED OFFER</p>
                 </div>
               </div>
             </div>
@@ -374,22 +374,22 @@ const Index = () => {
       </section>
 
       {/* Footer */}
-      <footer className="py-8 border-t border-border/20 bg-background/80 backdrop-blur-sm">
-        <div className="container mx-auto px-6">
-          <div className="text-center space-y-4">
-            <div className="flex items-center justify-center space-x-3 mb-4">
+      <footer className="py-6 sm:py-8 border-t border-border/20 bg-background/80 backdrop-blur-sm">
+        <div className="container mx-auto px-4 sm:px-6">
+          <div className="text-center space-y-3 sm:space-y-4">
+            <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
               <img 
                 src={drinkBookingIcon} 
                 alt="DrinkBooking Icon" 
-                className="w-8 h-8 object-contain opacity-80"
+                className="w-6 sm:w-8 h-6 sm:h-8 object-contain opacity-80"
               />
               <img 
                 src={drinkBookingLogo} 
                 alt="DrinkBooking Logo" 
-                className="h-6 object-contain opacity-80"
+                className="h-4 sm:h-6 object-contain opacity-80"
               />
             </div>
-            <p className="text-muted-foreground">
+            <p className="text-sm sm:text-base text-muted-foreground px-4">
               Get in contact with us: <a href="mailto:info@drinkbooking.com" className="text-primary hover:text-primary/80 transition-colors">info@drinkbooking.com</a>
             </p>
           </div>

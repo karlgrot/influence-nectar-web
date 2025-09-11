@@ -73,9 +73,9 @@ Luxury seduction and influence theme with sophisticated cocktail-inspired aesthe
     --transition-smooth: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 
     /* Typography Scale */
-    --font-size-hero: clamp(3rem, 8vw, 6rem);
-    --font-size-section: clamp(2rem, 5vw, 3.5rem);
-    --font-size-card: clamp(1.25rem, 3vw, 1.5rem);
+    --font-size-hero: clamp(2.5rem, 7vw, 6rem);
+    --font-size-section: clamp(1.75rem, 4.5vw, 3.5rem);
+    --font-size-card: clamp(1.125rem, 2.5vw, 1.5rem);
 
     /* Sidebar Variables */
     --sidebar-background: 0 0% 98%;

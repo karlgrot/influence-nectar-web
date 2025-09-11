@@ -39,18 +39,18 @@ export const ChatPopup = ({ isOpen, onClose, scenario }: ChatPopupProps) => {
 
   return (
     <Dialog open={isOpen} onOpenChange={onClose}>
-      <DialogContent className="max-w-2xl bg-gradient-card border-primary/30">
+      <DialogContent className="max-w-2xl mx-4 sm:mx-auto bg-gradient-card border-primary/30">
         <DialogHeader>
-          <DialogTitle className="flex items-center gap-3 text-2xl">
-            <span className="text-4xl">{scenario.icon}</span>
-            {scenario.title} - Interactive Guide
+          <DialogTitle className="flex items-center gap-2 sm:gap-3 text-lg sm:text-xl lg:text-2xl">
+            <span className="text-2xl sm:text-3xl lg:text-4xl">{scenario.icon}</span>
+            <span className="text-sm sm:text-base lg:text-lg">{scenario.title} - Interactive Guide</span>
           </DialogTitle>
         </DialogHeader>
         
-        <div className="space-y-6">
+        <div className="space-y-4 sm:space-y-6">
           {/* Progress Bar */}
           <div className="space-y-2">
-            <div className="flex justify-between text-sm text-muted-foreground">
+            <div className="flex justify-between text-xs sm:text-sm text-muted-foreground">
               <span>Question {currentQuestionIndex + 1} of {scenario.features.length}</span>
               <span>{Math.round(progress)}% Complete</span>
             </div>
@@ -63,60 +63,60 @@ export const ChatPopup = ({ isOpen, onClose, scenario }: ChatPopupProps) => {
           </div>
 
           {/* Current Question */}
-          <Card className="p-6 bg-background/50 border-primary/20">
-            <div className="space-y-4">
-              <h3 className="text-lg font-semibold text-primary">
+          <Card className="p-4 sm:p-6 bg-background/50 border-primary/20">
+            <div className="space-y-3 sm:space-y-4">
+              <h3 className="text-base sm:text-lg font-semibold text-primary">
                 Tell me about: {currentQuestion}
               </h3>
               
-              <div className="space-y-4">
-                <p className="text-muted-foreground">
+              <div className="space-y-3 sm:space-y-4">
+                <p className="text-sm sm:text-base text-muted-foreground">
                   I'm here to guide you through this aspect of {scenario.title.toLowerCase()}. 
                   What would you like to know about "{currentQuestion.toLowerCase()}"?
                 </p>
                 
-                <div className="grid grid-cols-1 md:grid-cols-2 gap-3">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2 sm:gap-3">
                   <Button 
                     variant="outline" 
-                    className="justify-start h-auto p-4 text-left"
+                    className="justify-start h-auto p-3 sm:p-4 text-left"
                     onClick={handleNext}
                   >
                     <div>
-                      <div className="font-medium">Basic Guide</div>
-                      <div className="text-sm text-muted-foreground">Essential tips and foundations</div>
+                      <div className="font-medium text-sm sm:text-base">Basic Guide</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground">Essential tips and foundations</div>
                     </div>
                   </Button>
                   
                   <Button 
                     variant="outline" 
-                    className="justify-start h-auto p-4 text-left"
+                    className="justify-start h-auto p-3 sm:p-4 text-left"
                     onClick={handleNext}
                   >
                     <div>
-                      <div className="font-medium">Advanced Techniques</div>
-                      <div className="text-sm text-muted-foreground">Pro-level strategies</div>
+                      <div className="font-medium text-sm sm:text-base">Advanced Techniques</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground">Pro-level strategies</div>
                     </div>
                   </Button>
                   
                   <Button 
                     variant="outline" 
-                    className="justify-start h-auto p-4 text-left"
+                    className="justify-start h-auto p-3 sm:p-4 text-left"
                     onClick={handleNext}
                   >
                     <div>
-                      <div className="font-medium">Practical Examples</div>
-                      <div className="text-sm text-muted-foreground">Real-world scenarios</div>
+                      <div className="font-medium text-sm sm:text-base">Practical Examples</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground">Real-world scenarios</div>
                     </div>
                   </Button>
                   
                   <Button 
                     variant="outline" 
-                    className="justify-start h-auto p-4 text-left"
+                    className="justify-start h-auto p-3 sm:p-4 text-left"
                     onClick={handleNext}
                   >
                     <div>
-                      <div className="font-medium">Common Mistakes</div>
-                      <div className="text-sm text-muted-foreground">What to avoid</div>
+                      <div className="font-medium text-sm sm:text-base">Common Mistakes</div>
+                      <div className="text-xs sm:text-sm text-muted-foreground">What to avoid</div>
                     </div>
                   </Button>
                 </div>
@@ -125,16 +125,17 @@ export const ChatPopup = ({ isOpen, onClose, scenario }: ChatPopupProps) => {
           </Card>
 
           {/* Action Buttons */}
-          <div className="flex justify-between items-center pt-4">
-            <Button variant="ghost" onClick={onClose}>
+          <div className="flex flex-col sm:flex-row justify-between items-center gap-3 sm:gap-0 pt-4">
+            <Button variant="ghost" onClick={onClose} className="text-sm sm:text-base">
               Close Guide
             </Button>
             
-            <div className="flex gap-3">
+            <div className="flex gap-2 sm:gap-3">
               {currentQuestionIndex > 0 && (
                 <Button 
                   variant="outline" 
                   onClick={() => setCurrentQuestionIndex(prev => prev - 1)}
+                  className="text-sm sm:text-base"
                 >
                   Previous
                 </Button>
@@ -143,6 +144,7 @@ export const ChatPopup = ({ isOpen, onClose, scenario }: ChatPopupProps) => {
               <Button 
                 variant={currentQuestionIndex === scenario.features.length - 1 ? "luxury" : "premium"}
                 onClick={handleNext}
+                className="text-sm sm:text-base"
               >
                 {currentQuestionIndex === scenario.features.length - 1 ? "Complete Guide" : "Next Question"}
               </Button>
