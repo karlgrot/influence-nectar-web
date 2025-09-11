@@ -8,8 +8,8 @@ import { ChatPopup } from "@/components/ChatPopup";
 import heroCocktail from "@/assets/hero-cocktail.jpg";
 import seductionWine from "@/assets/seduction-wine.jpg";
 import mixingCocktails from "@/assets/mixing-cocktails.jpg";
-import drinkBookingLogo from "@/assets/drinkbooking-logo.png";
-import drinkBookingIcon from "@/assets/drinkbooking-icon.png";
+import drinkBookingLogo from "@/assets/drinkbooking-main-logo.png";
+import drinkBookingIcon from "@/assets/drinkbooking-main-logo.png";
 
 const Index = () => {
   const [chatPopupOpen, setChatPopupOpen] = useState(false);
@@ -133,14 +133,9 @@ const Index = () => {
           <div className="flex items-center justify-between">
             <div className="flex items-center space-x-2 sm:space-x-3">
               <img 
-                src={drinkBookingIcon} 
-                alt="DrinkBooking Icon" 
-                className="w-8 h-8 sm:w-10 sm:h-10 object-contain"
-              />
-              <img 
                 src={drinkBookingLogo} 
                 alt="DrinkBooking Logo" 
-                className="h-6 sm:h-8 object-contain"
+                className="h-8 sm:h-10 lg:h-12 object-contain"
               />
             </div>
             <Button variant="outline" size="sm" className="text-xs sm:text-sm px-2 sm:px-4">
@@ -379,14 +374,9 @@ const Index = () => {
           <div className="text-center space-y-3 sm:space-y-4">
             <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
               <img 
-                src={drinkBookingIcon} 
-                alt="DrinkBooking Icon" 
-                className="w-6 sm:w-8 h-6 sm:h-8 object-contain opacity-80"
-              />
-              <img 
                 src={drinkBookingLogo} 
                 alt="DrinkBooking Logo" 
-                className="h-4 sm:h-6 object-contain opacity-80"
+                className="h-6 sm:h-8 lg:h-10 object-contain opacity-80"
               />
             </div>
             <p className="text-sm sm:text-base text-muted-foreground px-4">
