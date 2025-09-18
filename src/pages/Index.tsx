@@ -138,7 +138,12 @@ const Index = () => {
                 className="h-8 sm:h-10 lg:h-12 object-contain"
               />
             </div>
-            <Button variant="outline" size="sm" className="text-xs sm:text-sm px-2 sm:px-4">
+            <Button 
+              variant="outline" 
+              size="sm" 
+              className="text-xs sm:text-sm px-2 sm:px-4"
+              onClick={() => window.open('https://wa.me/5511939595959', '_blank')}
+            >
               Contact Us
             </Button>
           </div>
@@ -173,10 +178,20 @@ const Index = () => {
             </p>
             
             <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center mb-12 sm:mb-16 px-4">
-              <Button variant="hero" size="hero" className="animate-pulse-glow w-full sm:w-auto text-sm sm:text-base">
+              <Button 
+                variant="hero" 
+                size="hero" 
+                className="animate-pulse-glow w-full sm:w-auto text-sm sm:text-base"
+                onClick={() => window.open('https://wa.me/5511939595959', '_blank')}
+              >
                 🚀 I WANT TO BE IRRESISTIBLE
               </Button>
-              <Button variant="premium" size="lg" className="w-full sm:w-auto">
+              <Button 
+                variant="premium" 
+                size="lg" 
+                className="w-full sm:w-auto"
+                onClick={() => window.open('https://wa.me/5511939595959', '_blank')}
+              >
                 View Complete System
               </Button>
             </div>
@@ -265,7 +280,11 @@ const Index = () => {
                 </div>
               </div>
               
-              <Button variant="seduction" size="lg">
+              <Button 
+                variant="seduction" 
+                size="lg"
+                onClick={() => window.open('https://wa.me/5511939595959', '_blank')}
+              >
                 I Want to Change This NOW!
               </Button>
             </div>
@@ -350,7 +369,12 @@ const Index = () => {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4 sm:gap-6 justify-center items-center">
-                <Button variant="hero" size="hero" className="animate-pulse-glow text-base sm:text-lg lg:text-xl px-8 sm:px-12 lg:px-16 w-full sm:w-auto">
+                <Button 
+                  variant="hero" 
+                  size="hero" 
+                  className="animate-pulse-glow text-base sm:text-lg lg:text-xl px-8 sm:px-12 lg:px-16 w-full sm:w-auto"
+                  onClick={() => window.open('https://wa.me/5511939595959', '_blank')}
+                >
                   🔥 INSTANT ACCESS - $97
                 </Button>
                 <div className="text-center">
@@ -380,7 +404,8 @@ const Index = () => {
               />
             </div>
             <p className="text-sm sm:text-base text-muted-foreground px-4">
-              Get in contact with us: <a href="mailto:info@drinkbooking.com" className="text-primary hover:text-primary/80 transition-colors">info@drinkbooking.com</a>
+              Get in contact with us: <a href="mailto:info@drinkbooking.com" className="text-primary hover:text-primary/80 transition-colors">info@drinkbooking.com</a> | 
+              <a href="https://wa.me/5511939595959" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">WhatsApp</a>
             </p>
           </div>
         </div>
