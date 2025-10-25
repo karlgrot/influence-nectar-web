@@ -395,18 +395,23 @@ const Index = () => {
       {/* Footer */}
       <footer className="py-6 sm:py-8 border-t border-border/20 bg-background/80 backdrop-blur-sm">
         <div className="container mx-auto px-4 sm:px-6">
-          <div className="text-center space-y-3 sm:space-y-4">
-            <div className="flex items-center justify-center space-x-2 sm:space-x-3 mb-3 sm:mb-4">
-              <img 
-                src={drinkBookingLogo} 
-                alt="DrinkBooking Logo" 
-                className="h-6 sm:h-8 lg:h-10 object-contain opacity-80"
-              />
+          <div className="flex flex-col sm:flex-row items-center justify-between space-y-3 sm:space-y-0">
+            <div className="flex flex-col items-center sm:items-start space-y-3 sm:space-y-4">
+              <div className="flex items-center space-x-2 sm:space-x-3">
+                <img 
+                  src={drinkBookingLogo} 
+                  alt="DrinkBooking Logo" 
+                  className="h-6 sm:h-8 lg:h-10 object-contain opacity-80"
+                />
+              </div>
+              <p className="text-sm sm:text-base text-muted-foreground text-center sm:text-left">
+                Get in contact with us: <a href="mailto:info@drinkbooking.com" className="text-primary hover:text-primary/80 transition-colors">info@drinkbooking.com</a> | 
+                <a href="https://wa.me/5511939595959" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">WhatsApp</a>
+              </p>
             </div>
-            <p className="text-sm sm:text-base text-muted-foreground px-4">
-              Get in contact with us: <a href="mailto:info@drinkbooking.com" className="text-primary hover:text-primary/80 transition-colors">info@drinkbooking.com</a> | 
-              <a href="https://wa.me/5511939595959" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors">WhatsApp</a>
-            </p>
+            <div className="text-sm text-muted-foreground">
+              Powered by: <a href="https://2my.ai" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 transition-colors font-medium">2my.ai</a>
+            </div>
           </div>
         </div>
       </footer>
